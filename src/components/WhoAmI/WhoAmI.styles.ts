@@ -1,86 +1,80 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { Swiper } from "swiper/react";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
-  background: #000;
-  /* display: flex;
+  height: 70vh;
+`;
+
+export const SwiperContainer = styled(Swiper)`
   width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px; */
-`;
+  height: 100%;
 
-export const SwiperSlide = styled.div`
-  font-size: 18px;
-  color: #fff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 40px 60px;
-`;
-
-export const Wrapper = styled.div`
-  
-`;
-
-export const Avatar = styled.div`
-  display: flex;
-  margin: 0 100px 0 0;
-  width: 400px;
-  height: 400px;
-  padding: 0 0 0 0;
-  overflow: hidden;
-
-  img {
-    width: 400px;
-    height: 500px;
-    object-fit: cover;
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 `;
 
-export const ContainerInfo = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-  margin-left: 180px;
-  margin-top: 40px;
-`;
-
-export const WrapperInfos = styled.div`
+export const InfoContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  max-width: 350px;
-  margin-bottom: 50px;
+  align-items: center;
 `;
 
-export const Infos = styled.div`
+export const SlideImage = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+export const InfoIcon = styled.img`
+  position: absolute;
+  top: 12%;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+`;
+
+export const WrapperContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  top: 4%;
+  right: 30%;
+  width: 25%;
+  height: 80%;
+
+  h1 {
+   position: absolute;
+   text-align: center;
+   top: 30%
+  }
 
   span {
-    font-size: 16px;
+    position: absolute;
     width: 80%;
+    top: 40%;
+    left: 8%;
+    word-break: break-all;
+    text-align: center;
   }
-`;
-
-export const Icon = styled.img`
-  display: flex;
-  width: 56px;
-  height: 56px;
-
-`;
-
-export const Title = styled.div`
-
-`;
-
-export const Description = styled.div`
-
 `;

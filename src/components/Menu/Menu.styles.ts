@@ -5,7 +5,7 @@ export const Container = styled.div`
 `;
 
 export const WrapperMenu = styled.div`
-  background-color: #252525;
+  background-color: #660708;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -18,25 +18,29 @@ export const Menu = styled.div`
   list-style: none;
 `;
 
-export const MenuItem = styled.div`
+export const MenuItem = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   padding: 0 20px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-`;
-
-export const Link = styled.div`
   font-family: 'Roboto', 'sans-serif';
-  color: #e0e0e0;
-  text-decoration: none;
   font-size: 20px;
+  color: #fff;
+  text-decoration: none;
 
-  &:hover {
+  a {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover{
     color: #252525;
   }
+
 `;
 
 export const Logo = styled.div`
