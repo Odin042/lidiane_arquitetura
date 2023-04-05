@@ -1,5 +1,3 @@
-import Description from "../../components/Typography/Description";
-import Heading from "../../components/Typography/Heading";
 import WhoAmI from "../../components/WhoAmI";
 import * as Styles from "./Sobre.styles";
 
