@@ -21,10 +21,12 @@ export const Logo = styled.div`
   left: 0;
   z-index: 1;
 
+  img {
+    width: 500px;
+  }
+
 `;
 
 export const WrapperBanner = styled.div`
   display: flex;
-
-
 `;
