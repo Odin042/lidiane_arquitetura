@@ -1,36 +1,33 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
- display: flex;
-
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ContainerWho = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   width: 100%;
+  background-color: #660708;
   flex-direction: row;
+
 `;
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 60px 60px 60px 170px;
   width: 400px;
   height: 400px;
-  border-radius: 10%;
-  padding: 0 600px 0 0;
-  overflow: hidden;
-
-  img {
-    width: 900px;
-    height: 500px;
-    object-fit: cover;
-  }
+  border-radius: 20%;
 `;
 
 export const Text = styled.div`
   display: flex;
   flex-direction: column;
+
 
   span {
     width: 70%;
