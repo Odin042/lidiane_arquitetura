@@ -8,7 +8,7 @@ const Sobre = () => {
     <Styles.Container>
       <WhoAmI />
       <Styles.ContainerWho>
-        <Styles.Avatar src="/images/avatar-arquitetura.jpg" alt="logo" />
+        <Styles.Avatar src="/images/lidiane.png" alt="logo" />
         <Styles.Text>
           <Heading inverse size={"Display"} label="Lidiane Vieira" />
           <Description

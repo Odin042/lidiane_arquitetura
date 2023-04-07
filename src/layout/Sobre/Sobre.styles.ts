@@ -19,8 +19,8 @@ export const ContainerWho = styled.div`
 export const Avatar = styled.img`
   display: flex;
   margin: 60px 60px 60px 170px;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   border-radius: 20%;
 `;
 
