@@ -1,13 +1,15 @@
+import React, { useRef, useState } from "react";
+
 import Description from "../Typography/Description";
 import Heading from "../Typography/Heading";
-import * as Styles from "./WhoAmI.styles";
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from 'swiper';
+import { Mousewheel , Pagination } from 'swiper';
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
+import * as Styles from "./WhoAmI.styles";
 
 const mockInfos = [
   {
@@ -37,17 +39,15 @@ const WhoAmI = () => {
   return (
     <Styles.Container>
       <Styles.SwiperContainer
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 9000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+         direction={"vertical"}
+         slidesPerView={1}
+         spaceBetween={30}
+         mousewheel={true}
+         pagination={{
+           clickable: true,
+         }}
+         modules={[Mousewheel, Pagination]}
+         className="mySwiper"
       >
         {mockInfos.map((info) => (
           <SwiperSlide key={info.title}>
@@ -60,7 +60,7 @@ const WhoAmI = () => {
               </Styles.WrapperContainer>
             </Styles.InfoContainer>
           </SwiperSlide>
-        ))}
+        ))}     
       </Styles.SwiperContainer>
     </Styles.Container>
 

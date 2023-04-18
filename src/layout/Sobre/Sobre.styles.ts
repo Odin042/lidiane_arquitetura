@@ -1,35 +1,34 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
   flex-direction: column;
 `;
 
 export const ContainerWho = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  position: relative;
   width: 100%;
+  height: 150vh;
   background-color: #660708;
-  flex-direction: row;
-
+  flex-direction: column;
 `;
 
 export const Avatar = styled.img`
-  display: flex;
-  margin: 60px 60px 60px 220px;
-  width: 500px;
-  height: 500px;
-  border-radius: 20%;
+  position: absolute;
+  left: 650px;
+  top: 70px;
+  width: 422px;
+  height: 420px;
+  border-radius: 50%;
 `;
 
 export const Text = styled.div`
   display: flex;
+  position: absolute;
+  left: 450px;
+  top: 520px;
   flex-direction: column;
 
-
   span {
-    width: 70%;
+    width: 60%;
   }
 `;
