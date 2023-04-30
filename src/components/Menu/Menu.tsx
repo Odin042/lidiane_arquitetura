@@ -15,11 +15,6 @@ const Menu = () => {
                 Home
               </NavLink>
             </Styles.MenuItem>
-            <Styles.MenuItem>
-              <NavLink  to='/sobre'>
-                Sobre
-              </NavLink>
-            </Styles.MenuItem>
           </Styles.Menu>
         </Styles.WrapperMenu>
       </Styles.Container>

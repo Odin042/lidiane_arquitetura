@@ -27,6 +27,12 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  
+  @media screen and (max-width: 600px) {
+    
+  
+  }
 `;
 
 export const SlideImage = styled.img`
@@ -45,6 +51,12 @@ export const InfoIcon = styled.img`
   width: 80px;
   height: 80px;
   object-fit: contain;
+
+  @media screen and (max-width: 600px) {
+    width: 60px;
+    height: 60px;
+    left:;
+  }
 `;
 
 export const WrapperContainer = styled.div`
@@ -76,5 +88,19 @@ export const WrapperContainer = styled.div`
     left: 8%;
     word-break: break-all;
     text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    align-items: center;
+    right: 0;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 0.9rem;
+    }
   }
 `;
