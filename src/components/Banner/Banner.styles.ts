@@ -14,7 +14,7 @@ export const SwiperSlide = styled.img`
   height: 100%;
   object-fit: cover;
 
-  @media screen and (max-width: 2560px) {
+  @media (min-width: 320px) and (max-width: 720px) {
     width: 100rem;
   }
 `;
@@ -35,18 +35,15 @@ export const Logo = styled.div`
     max-width: 100%;
   }
 
-  @media screen and (max-width: 600px) {
+  @media (min-width: 320px) and (max-width: 720px) {
     width: 300px;
-    height: 95vh;
-    margin-left: 30px;
-
-    img{
-      width: 200px;
-      height: 150px;
-    }
+    height: 300px;
+    position: absolute;
+    left: 10%;
+    top: 34%;
   }
 
-  @media screen and (max-width: 2560px) {
+  @media (min-width: 1440px) and (max-width: 2560px) {
     width: 500px;
     height: 100vh;
     top: 6%;
@@ -59,16 +56,16 @@ export const WrapperBanner = styled.div`
   display: flex;
   width: 100%;
 
-  @media screen and (max-width: 600px) {
+  @media (min-width: 320px) and (max-width: 720px) {
     width: 150%;
 
     img {
       width: 400px;
-      height: 90vh;
+      height: 100vh;
     }
   }
 
-  @media screen and (max-width: 2560px) {
+  @media (min-width: 1440px) and (max-width: 2560px) {
     width: 100%;
 
     img {

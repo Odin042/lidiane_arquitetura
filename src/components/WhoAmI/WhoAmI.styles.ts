@@ -55,7 +55,6 @@ export const InfoIcon = styled.img`
   @media screen and (max-width: 600px) {
     width: 60px;
     height: 60px;
-    left:;
   }
 `;
 
