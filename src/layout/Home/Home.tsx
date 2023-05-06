@@ -1,4 +1,5 @@
 import Banner from "../../components/Banner";
+import Contact from "../../components/Contact";
 import Sobre from "../../components/Sobre";
 
 
@@ -9,6 +10,7 @@ const Home = () => {
     <Styles.Container>
       <Banner />
       <Sobre />
+      <Contact />
     </Styles.Container>
   );
 };

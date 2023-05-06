@@ -6,14 +6,17 @@ export const Container = styled.div`
 
 export const ContainerWho = styled.div`
   position: relative;
-  width: 100%;
-  height: 100vh;
   background-color: #660708;
   flex-direction: column;
 
   @media (min-width: 320px) and (max-width: 720px) {
     width: 100%;
     height: 155vh;
+  }
+
+  @media (min-width: 1440px) and (max-width: 2560px) {
+    width: 100%;
+    height: 100vh;
   }
 `;
 
@@ -76,15 +79,13 @@ export const Text = styled.div`
 
   @media (min-width: 1440px) and (max-width: 2560px) {
     position: absolute;
-    height: 100%;
     left: 20%;
-    margin-bottom: 16px;
 
     h1 {
-      font-size: 4rem;
+      font-size: 2rem;
       font-family: 'Roboto', 'sans-serif';
       margin: 16px;
-      top: 20%;
+      top: 30%;
       }
 
     span {
